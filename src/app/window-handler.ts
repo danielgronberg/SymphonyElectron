@@ -170,7 +170,7 @@ export class WindowHandler {
             if (this.url.indexOf('x-km-csrf-token') !== -1) {
                 if (this.url.indexOf('clientproxy') === -1) {
                     const { channel } = config.getGlobalConfigFields([ 'channel' ]);
-                    const channelString = (channel) ? channel + '/' : "";
+                    const channelString = (channel) ? channel + '/' : '';
                     const parsedUrl = parse(this.url);
                     const dogfoodUrl = 'https://' + parsedUrl.hostname + '/clientproxy/' + channelString + 'index.html' + parsedUrl.search;
                     this.mainWindow.loadURL(dogfoodUrl);
