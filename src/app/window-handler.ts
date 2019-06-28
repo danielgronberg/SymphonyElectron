@@ -98,7 +98,7 @@ export class WindowHandler {
                 frame: !this.isCustomTitleBar,
                 minHeight: 300,
                 minWidth: 300,
-                title: 'Symphony',
+                title: 'ManaDLY',
             }, {
                 preload: path.join(__dirname, '../renderer/_preload-main.js'),
             }), ...opts,

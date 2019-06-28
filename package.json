@@ -1,6 +1,6 @@
 {
-  "name": "symphony",
-  "productName": "Symphony",
+  "name": "ManaDLY",
+  "productName": "ManaDLY",
   "version": "3.8.0",
   "clientVersion": "1.55",
   "buildNumber": "0",
@@ -21,7 +21,7 @@
     "rebuild": "electron-rebuild -f",
     "start": "npm run compile && npm run browserify-preload && cross-env ELECTRON_DEV=true electron .",
     "test": "npm run lint && cross-env ELECTRON_QA=true jest --config jest.config.json --runInBand",
-    "unpacked-mac": "npm run prebuild && npm run test && build --mac --dir",
+    "unpacked-mac": "npm run prebuild && build --mac --dir",
     "unpacked-win": "npm run prebuild && npm run test && build --win --x64 --dir",
     "unpacked-win-x86": "npm run prebuild && npm run test && build --win --ia32 --dir"
   },
@@ -48,7 +48,7 @@
       "library/cryptoLib.dylib",
       "library/lz4.exec"
     ],
-    "appId": "com.symphony.electron-desktop",
+    "appId": "com.symphony.ManaDLY-desktop",
     "mac": {
       "target": "dmg",
       "category": "public.app-category.business"

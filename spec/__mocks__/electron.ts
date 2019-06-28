@@ -4,7 +4,7 @@ import { isWindowsOS } from '../../src/common/env';
 const ipcEmitter = new EventEmitter();
 
 const mockIdleTime: number = 15;
-const appName: string = 'Symphony';
+const appName: string = 'ManaDLY';
 const executableName: string = '/Symphony.exe';
 const isReady: boolean = true;
 const version: string = '4.0.0';
