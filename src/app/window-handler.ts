@@ -168,11 +168,11 @@ export class WindowHandler {
             this.url = this.mainWindow.webContents.getURL();
 
             if (this.url.indexOf('x-km-csrf-token') !== -1) {
-                if (this.url.indexOf('clientproxy') === -1) {
+                if (this.url.indexOf('client-bff') === -1) {
                     const { channel } = config.getGlobalConfigFields([ 'channel' ]);
                     const channelString = (channel) ? channel + '/' : '';
                     const parsedUrl = parse(this.url);
-                    const dogfoodUrl = 'https://' + parsedUrl.hostname + '/clientproxy/' + channelString + 'index.html' + parsedUrl.search;
+                    const dogfoodUrl = 'https://' + parsedUrl.hostname + '/client-bff/' + channelString + 'index.html' + parsedUrl.search;
                     this.mainWindow.loadURL(dogfoodUrl);
 
                     this.url = this.mainWindow.webContents.getURL();
